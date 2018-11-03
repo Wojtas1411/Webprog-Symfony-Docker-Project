@@ -41,6 +41,11 @@ class PersonalData
      */
     private $Photo;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $OwnerID;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -102,6 +107,18 @@ class PersonalData
     public function setPhoto(?string $Photo): self
     {
         $this->Photo = $Photo;
+
+        return $this;
+    }
+
+    public function getOwnerID(): ?int
+    {
+        return $this->OwnerID;
+    }
+
+    public function setOwnerID(int $OwnerID): self
+    {
+        $this->OwnerID = $OwnerID;
 
         return $this;
     }

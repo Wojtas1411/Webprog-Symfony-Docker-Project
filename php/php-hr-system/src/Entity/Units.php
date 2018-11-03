@@ -65,24 +65,24 @@ class Units
         return $this;
     }
 
-    public function getParentID(): ?string
+    public function getParentID(): ?int
     {
         return $this->parentID;
     }
 
-    public function setParentID(?string $parentID): self
+    public function setParentID(?int $parentID): self
     {
         $this->parentID = $parentID;
 
         return $this;
     }
 
-    public function getBossID(): ?string
+    public function getBossID(): ?int
     {
         return $this->BossID;
     }
 
-    public function setBossID(string $BossID): self
+    public function setBossID(int $BossID): self
     {
         $this->BossID = $BossID;
 
