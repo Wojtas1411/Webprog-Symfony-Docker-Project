@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% block title %}HR System{% endblock %}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+    <!-- header bar -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="row">
+            <div class="col"><center><h1>Human Resource System</h1></center></div>
+        </div>
+    </div>
+
+    <!-- main nav bar-->
+
+    <!-- Grey with black text -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <ul class="navbar-nav">
+            {#
+            {% for item in navigation %}
+                <li class="{{ item.class }}"><a class="{{ item.aclass }}" href="{{ item.href }}">{{ item.caption }}</a></li>
+            {% endfor %}
+            #}
+            <!---->
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <!---->
+        </ul>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            {% block body %}Hello there!{% endblock %}
+        </div>
+    </div>
+
+
+    <!-- footer bar -->
+
+    <div class="jumbotron jumbotron-fluid align-bottom">
+        <div class="container">
+            <center>
+                <p>I don't know what to place here yet</p>
+            </center>
+
+            <center>
+                <small>
+                    <p class="font-italic">Developed by Wojciech Taisner 2018</p>
+                </small>
+            </center>
+
+        </div>
+    </div>
+
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

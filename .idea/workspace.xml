@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="43976ee2-d73f-42b6-a765-ed8588b447b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/php-hr-system/composer.json</pharConfigPath>
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1816215868">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.34" value="1" />
+          <entry key="project.open.time.35" value="2" />
+          <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="env" value="1" />
+          <entry key="php" value="8" />
+          <entry key="twig" value="5" />
+          <entry key="yaml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="8" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Twig" value="5" />
+          <entry key="YAML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="env" value="84" />
+          <entry key="php" value="442" />
+          <entry key="twig" value="553" />
+          <entry key="yaml" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key=".env file" value="34" />
+          <entry key="PHP" value="442" />
+          <entry key="PLAIN_TEXT" value="50" />
+          <entry key="Twig" value="553" />
+          <entry key="YAML" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.php.new.class">
+        <counts>
+          <entry key="PHP Class.type" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="56" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Entity/Units.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/config/packages/doctrine.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/start/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/php-hr-system/config/routes.yaml" />
+        <option value="$PROJECT_DIR$/php-hr-system/templates/main.html.twig" />
+        <option value="$PROJECT_DIR$/php-hr-system/src/Controller/LuckyController.php" />
+        <option value="$PROJECT_DIR$/php-hr-system/templates/start/index.html.twig" />
+        <option value="$PROJECT_DIR$/php-hr-system/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/php-hr-system/src/Entity/PersonalData.php" />
+        <option value="$PROJECT_DIR$/php-hr-system/src/Entity/JobData.php" />
+        <option value="$PROJECT_DIR$/php-hr-system/src/Entity/StaffCategory.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/templates/start/index.html.twig" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/config/packages/doctrine.yaml" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/.env" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Entity/Units.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/serializer-pack" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/panther" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/composer" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/security" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/polyfill-intl-icu" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="y" value="27" />
+    <option name="width" value="960" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="start" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43976ee2-d73f-42b6-a765-ed8588b447b4" name="Default Changelist" comment="" />
+      <created>1539593225024</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539593225024</updated>
+      <workItem from="1539593226732" duration="261000" />
+      <workItem from="1539698951558" duration="1133000" />
+      <workItem from="1540473164444" duration="745000" />
+      <workItem from="1541073923748" duration="1121000" />
+      <workItem from="1541082152606" duration="2198000" />
+      <workItem from="1541089377812" duration="2903000" />
+      <workItem from="1541174271785" duration="920000" />
+      <workItem from="1541175205848" duration="1703000" />
+      <workItem from="1541242336130" duration="1625000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="12609000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="960" height="1053" extended-state="4" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35526314" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32930845" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" weight="0.32930845" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/index.php" />
+    <entry file="file://$PROJECT_DIR$/php-hr-system/templates/main.html.twig" />
+    <entry file="file://$PROJECT_DIR$/php-hr-system/templates/base.html.twig" />
+    <entry file="file://$PROJECT_DIR$/php-hr-system/src/Entity/PersonalData.php" />
+    <entry file="file://$PROJECT_DIR$/php-hr-system/src/Entity/JobData.php" />
+    <entry file="file://$PROJECT_DIR$/php-hr-system/src/Controller/LuckyController.php" />
+    <entry file="file://$PROJECT_DIR$/php-hr-system/src/Controller/StartController.php" />
+    <entry file="file://$PROJECT_DIR$/php-hr-system/public/index.php" />
+    <entry file="file://$PROJECT_DIR$/php-hr-system/templates/start/index.html.twig" />
+    <entry file="file://$PROJECT_DIR$/php-hr-system/config/routes.yaml" />
+    <entry file="file://$PROJECT_DIR$/php-hr-system/src/Entity/StaffCategory.php" />
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="56" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/start/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/config/packages/doctrine.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Entity/Units.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
