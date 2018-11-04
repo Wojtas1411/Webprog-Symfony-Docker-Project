@@ -17,11 +17,6 @@ class PhoneNumbers
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $OwnerID;
-
-    /**
      * @ORM\Column(type="boolean")
      */
     private $prim;
@@ -31,21 +26,15 @@ class PhoneNumbers
      */
     private $Value;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\PersonalData", inversedBy="phoneNumbers")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $User;
+
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getOwnerID(): ?int
-    {
-        return $this->OwnerID;
-    }
-
-    public function setOwnerID(int $OwnerID): self
-    {
-        $this->OwnerID = $OwnerID;
-
-        return $this;
     }
 
     public function getPrim(): ?bool
@@ -68,6 +57,18 @@ class PhoneNumbers
     public function setValue(string $Value): self
     {
         $this->Value = $Value;
+
+        return $this;
+    }
+
+    public function getUser(): ?PersonalData
+    {
+        return $this->User;
+    }
+
+    public function setUser(?PersonalData $User): self
+    {
+        $this->User = $User;
 
         return $this;
     }

@@ -36,6 +36,17 @@ class Units
      */
     private $BossID;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Units")
+     */
+    private $Parent;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\PersonalData")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $Boss;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -85,6 +96,30 @@ class Units
     public function setBossID(int $BossID): self
     {
         $this->BossID = $BossID;
+
+        return $this;
+    }
+
+    public function getParent(): ?self
+    {
+        return $this->Parent;
+    }
+
+    public function setParent(?self $Parent): self
+    {
+        $this->Parent = $Parent;
+
+        return $this;
+    }
+
+    public function getBoss(): ?PersonalData
+    {
+        return $this->Boss;
+    }
+
+    public function setBoss(?PersonalData $Boss): self
+    {
+        $this->Boss = $Boss;
 
         return $this;
     }

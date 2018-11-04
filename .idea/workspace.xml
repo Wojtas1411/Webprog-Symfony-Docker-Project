@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43976ee2-d73f-42b6-a765-ed8588b447b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php-hr-system/src/Form/DataTransformers/UserNameToPersonalDataTransformer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/php-hr-system/src/Form/DataTransformers/UserNameToUserTransformer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-hr-system/src/Controller/LuckyController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-hr-system/src/Entity/JobData.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-hr-system/src/Entity/NavbarItem.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-hr-system/src/Entity/PersonalData.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php-hr-system/src/Entity/StaffCategory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/php-hr-system/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/php/php-hr-system/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/php-hr-system/src/Entity/Adres.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php-hr-system/src/Entity/Adres.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/php-hr-system/src/Entity/Emails.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php-hr-system/src/Entity/Emails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/php-hr-system/src/Entity/PersonalData.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php-hr-system/src/Entity/PersonalData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/php-hr-system/src/Entity/PhoneNumbers.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php-hr-system/src/Entity/PhoneNumbers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/php-hr-system/src/Entity/Units.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php-hr-system/src/Entity/Units.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/php-hr-system/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php-hr-system/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/php-hr-system/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/php-hr-system/src/Form/UserType.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,48 +40,50 @@
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.52" value="2" />
           <entry key="project.open.time.53" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.59" value="1" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="env" value="1" />
-          <entry key="php" value="8" />
-          <entry key="twig" value="5" />
-          <entry key="yaml" value="2" />
+          <entry key="php" value="45" />
+          <entry key="twig" value="15" />
+          <entry key="yaml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="8" />
+          <entry key="PHP" value="45" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Twig" value="5" />
-          <entry key="YAML" value="2" />
+          <entry key="Twig" value="15" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="env" value="84" />
-          <entry key="php" value="442" />
-          <entry key="twig" value="553" />
-          <entry key="yaml" value="8" />
+          <entry key="env" value="153" />
+          <entry key="php" value="1224" />
+          <entry key="twig" value="696" />
+          <entry key="yaml" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="34" />
-          <entry key="PHP" value="442" />
+          <entry key=".env file" value="103" />
+          <entry key="PHP" value="1224" />
           <entry key="PLAIN_TEXT" value="50" />
-          <entry key="Twig" value="553" />
-          <entry key="YAML" value="8" />
+          <entry key="Twig" value="696" />
+          <entry key="YAML" value="216" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="3" />
+          <entry key="PHP Class.type" value="5" />
         </counts>
       </usages-collector>
     </session>
@@ -72,46 +91,65 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/base.html.twig">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Controller/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="56" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
+            <state relative-caret-position="360">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/php-hr-system/.env">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Form/UserType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="330">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+              <folding>
+                <element signature="e#28#48#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Form/PersonalDataType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
+              <folding>
+                <element signature="e#28#56#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Form/DataTransformers/UserNameToUserTransformer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+              <folding>
+                <element signature="e#6#86#0#PHP" expanded="true" />
+                <element signature="e#126#146#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Entity/Units.php">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Form/DataTransformers/UserNameToPersonalDataTransformer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+            <state relative-caret-position="90">
+              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/php-hr-system/config/packages/doctrine.yaml">
+        <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Controller/PersonalDataController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/start/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="975">
+              <caret line="71" column="47" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -135,8 +173,25 @@
         <option value="$PROJECT_DIR$/php/php-hr-system/templates/start/index.html.twig" />
         <option value="$PROJECT_DIR$/php/php-hr-system/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/php/php-hr-system/config/packages/doctrine.yaml" />
-        <option value="$PROJECT_DIR$/php/php-hr-system/.env" />
         <option value="$PROJECT_DIR$/php/php-hr-system/src/Entity/Units.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/DataFixtures/UserFixture.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Security/LoginFormAuthenticator.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/.env" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/templates/security/login.html.twig" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/templates/user/show.html.twig" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/templates/user/index.html.twig" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Entity/PersonalData.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Entity/Emails.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Entity/PhoneNumbers.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Entity/Adres.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/templates/personal_data/_form.html.twig" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Form/UserType.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Form/PersonalDataType.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Form/DataTransformers/UserNameToUserTransformer.php" />
+        <option value="$PROJECT_DIR$/php/php-hr-system/src/Form/DataTransformers/UserNameToPersonalDataTransformer.php" />
       </list>
     </option>
   </component>
@@ -245,7 +300,8 @@
       <path value="$PROJECT_DIR$/php-hr-system/vendor/symfony/polyfill-intl-icu" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="22" />
     <option name="y" value="27" />
     <option name="width" value="960" />
     <option name="height" value="1053" />
@@ -287,6 +343,14 @@
               <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
               <item name="php" type="462c0819:PsiDirectoryNode" />
               <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="packages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -303,7 +367,16 @@
               <item name="php" type="462c0819:PsiDirectoryNode" />
               <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Form" type="462c0819:PsiDirectoryNode" />
+              <item name="DataTransformers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
@@ -311,6 +384,14 @@
               <item name="php" type="462c0819:PsiDirectoryNode" />
               <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker-project-php" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="php-hr-system" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="personal_data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docker-project-php" type="b2602c69:ProjectViewProjectNode" />
@@ -362,18 +443,21 @@
       <workItem from="1541089377812" duration="2903000" />
       <workItem from="1541174271785" duration="920000" />
       <workItem from="1541175205848" duration="1703000" />
-      <workItem from="1541242336130" duration="1625000" />
+      <workItem from="1541242336130" duration="6020000" />
+      <workItem from="1541263682262" duration="3417000" />
+      <workItem from="1541326624242" duration="4217000" />
+      <workItem from="1541336854041" duration="8291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12609000" />
+    <option name="totallyTimeSpent" value="32929000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="960" height="1053" extended-state="4" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35526314" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18162394" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -401,9 +485,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/index.php" />
-    <entry file="file://$PROJECT_DIR$/php-hr-system/templates/main.html.twig" />
-    <entry file="file://$PROJECT_DIR$/php-hr-system/templates/base.html.twig" />
     <entry file="file://$PROJECT_DIR$/php-hr-system/src/Entity/PersonalData.php" />
     <entry file="file://$PROJECT_DIR$/php-hr-system/src/Entity/JobData.php" />
     <entry file="file://$PROJECT_DIR$/php-hr-system/src/Controller/LuckyController.php" />
@@ -433,17 +514,229 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/DataFixtures/UserFixture.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/php-hr-system/.env">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Security/LoginFormAuthenticator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="92" column="36" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Controller/StartController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Controller/LuckyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/user/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/user/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="28" selection-start-line="21" selection-start-column="16" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/user/_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/user/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/user/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Migrations/Version20181104111343.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Controller/StaffCategoryController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Entity/Emails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Entity/PhoneNumbers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Entity/PersonalData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="142" column="5" selection-start-line="142" selection-start-column="5" selection-end-line="142" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Entity/Adres.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Entity/Units.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        <state relative-caret-position="855">
+          <caret line="84" column="5" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/personal_data/_delete_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="94" selection-start-line="2" selection-start-column="94" selection-end-line="2" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/personal_data/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/personal_data/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="50" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/templates/personal_data/_form.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Repository/PersonalDataRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Repository/PhoneNumbersRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Repository/StaffCategoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Repository/UnitsRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Repository/AdresRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Form/StaffCategoryType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Repository/JobDataRepository.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Form/AdresType.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Controller/PersonalDataController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="71" column="47" selection-start-line="71" selection-start-column="47" selection-end-line="71" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Form/PersonalDataType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
+          <folding>
+            <element signature="e#28#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Form/UserType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding>
+            <element signature="e#28#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Form/DataTransformers/UserNameToUserTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="true" />
+            <element signature="e#126#146#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php-hr-system/src/Form/DataTransformers/UserNameToPersonalDataTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>

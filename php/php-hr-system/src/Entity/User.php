@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -37,6 +39,13 @@ class User implements UserInterface
      * @ORM\OneToOne(targetEntity="App\Entity\PersonalData", mappedBy="UserID", cascade={"persist", "remove"})
      */
     private $personalData;
+
+    public function __construct()
+    {
+        $this->emails = new ArrayCollection();
+        $this->adres = new ArrayCollection();
+        $this->phoneNumbers = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -127,4 +136,6 @@ class User implements UserInterface
 
         return $this;
     }
+
+
 }

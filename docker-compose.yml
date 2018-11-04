@@ -20,7 +20,8 @@ services:
     links:
         - mysql
     volumes:
-        - app
+        # - app
+        - ./php/php-hr-system:/var/www/html/
     networks:
         uln:
          ipv4_address: 10.6.0.3
@@ -28,7 +29,7 @@ services:
   app:
     image: php:7.2-fpm
     volumes:
-        - ./www:/var/www/html/symfony
+        - ./php/php-hr-system:/var/www/html/
     command: "true"
 
   mysql:

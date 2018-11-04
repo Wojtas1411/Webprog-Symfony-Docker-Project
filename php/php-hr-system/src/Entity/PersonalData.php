@@ -44,11 +44,6 @@ class PersonalData
     private $Photo;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $OwnerID;
-
-    /**
      * @ORM\OneToOne(targetEntity="App\Entity\User", inversedBy="personalData", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
      */
@@ -59,9 +54,27 @@ class PersonalData
      */
     private $memberships;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Adres", mappedBy="User", orphanRemoval=true)
+     */
+    private $adres;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\Emails", mappedBy="User", orphanRemoval=true)
+     */
+    private $emails;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\PhoneNumbers", mappedBy="User", orphanRemoval=true)
+     */
+    private $phoneNumbers;
+
     public function __construct()
     {
         $this->memberships = new ArrayCollection();
+        $this->adres = new ArrayCollection();
+        $this->emails = new ArrayCollection();
+        $this->phoneNumbers = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -129,18 +142,6 @@ class PersonalData
         return $this;
     }
 
-    public function getOwnerID(): ?int
-    {
-        return $this->OwnerID;
-    }
-
-    public function setOwnerID(int $OwnerID): self
-    {
-        $this->OwnerID = $OwnerID;
-
-        return $this;
-    }
-
     public function getUserID(): ?User
     {
         return $this->UserID;
@@ -178,6 +179,99 @@ class PersonalData
             // set the owning side to null (unless already changed)
             if ($membership->getPerson() === $this) {
                 $membership->setPerson(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Adres[]
+     */
+    public function getAdres(): Collection
+    {
+        return $this->adres;
+    }
+
+    public function addAdre(Adres $adre): self
+    {
+        if (!$this->adres->contains($adre)) {
+            $this->adres[] = $adre;
+            $adre->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAdre(Adres $adre): self
+    {
+        if ($this->adres->contains($adre)) {
+            $this->adres->removeElement($adre);
+            // set the owning side to null (unless already changed)
+            if ($adre->getUser() === $this) {
+                $adre->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Emails[]
+     */
+    public function getEmails(): Collection
+    {
+        return $this->emails;
+    }
+
+    public function addEmail(Emails $email): self
+    {
+        if (!$this->emails->contains($email)) {
+            $this->emails[] = $email;
+            $email->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeEmail(Emails $email): self
+    {
+        if ($this->emails->contains($email)) {
+            $this->emails->removeElement($email);
+            // set the owning side to null (unless already changed)
+            if ($email->getUser() === $this) {
+                $email->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|PhoneNumbers[]
+     */
+    public function getPhoneNumbers(): Collection
+    {
+        return $this->phoneNumbers;
+    }
+
+    public function addPhoneNumber(PhoneNumbers $phoneNumber): self
+    {
+        if (!$this->phoneNumbers->contains($phoneNumber)) {
+            $this->phoneNumbers[] = $phoneNumber;
+            $phoneNumber->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removePhoneNumber(PhoneNumbers $phoneNumber): self
+    {
+        if ($this->phoneNumbers->contains($phoneNumber)) {
+            $this->phoneNumbers->removeElement($phoneNumber);
+            // set the owning side to null (unless already changed)
+            if ($phoneNumber->getUser() === $this) {
+                $phoneNumber->setUser(null);
             }
         }
 

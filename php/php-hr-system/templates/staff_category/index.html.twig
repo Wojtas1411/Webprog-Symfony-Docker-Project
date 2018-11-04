@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}StaffCategory index{% endblock %}
+
+{% block body %}
+    <h1>StaffCategory index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for staff_category in staff_categories %}
+            <tr>
+                <td>{{ staff_category.id }}</td>
+                <td>{{ staff_category.Name }}</td>
+                <td>
+                    <a href="{{ path('staff_category_show', {'id': staff_category.id}) }}">show</a>
+                    <a href="{{ path('staff_category_edit', {'id': staff_category.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('staff_category_new') }}">Create new</a>
+{% endblock %}

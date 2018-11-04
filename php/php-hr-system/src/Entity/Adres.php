@@ -17,11 +17,6 @@ class Adres
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
-     */
-    private $OwnerID;
-
-    /**
      * @ORM\Column(type="boolean")
      */
     private $prim;
@@ -51,21 +46,15 @@ class Adres
      */
     private $Town;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\PersonalData", inversedBy="adres")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $User;
+
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getOwnerID(): ?int
-    {
-        return $this->OwnerID;
-    }
-
-    public function setOwnerID(int $OwnerID): self
-    {
-        $this->OwnerID = $OwnerID;
-
-        return $this;
     }
 
     public function getPrim(): ?bool
@@ -136,6 +125,18 @@ class Adres
     public function setTown(string $Town): self
     {
         $this->Town = $Town;
+
+        return $this;
+    }
+
+    public function getUser(): ?PersonalData
+    {
+        return $this->User;
+    }
+
+    public function setUser(?PersonalData $User): self
+    {
+        $this->User = $User;
 
         return $this;
     }

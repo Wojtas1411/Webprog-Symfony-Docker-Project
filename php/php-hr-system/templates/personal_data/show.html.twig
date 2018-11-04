@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PersonalData{% endblock %}
+
+{% block body %}
+    <h1>PersonalData</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ personal_datum.id }}</td>
+            </tr>
+            <tr>
+                <th>FamilyName</th>
+                <td>{{ personal_datum.FamilyName }}</td>
+            </tr>
+            <tr>
+                <th>FirstName</th>
+                <td>{{ personal_datum.FirstName }}</td>
+            </tr>
+            <tr>
+                <th>BirthDate</th>
+                <td>{{ personal_datum.BirthDate ? personal_datum.BirthDate|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>BirthPlace</th>
+                <td>{{ personal_datum.BirthPlace }}</td>
+            </tr>
+            <tr>
+                <th>Photo</th>
+                <td>{{ personal_datum.Photo }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('personal_data_index') }}">back to list</a>
+
+    <a href="{{ path('personal_data_edit', {'id': personal_datum.id}) }}">edit</a>
+
+    {{ include('personal_data/_delete_form.html.twig') }}
+{% endblock %}
