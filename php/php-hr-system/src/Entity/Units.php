@@ -27,16 +27,6 @@ class Units
     private $type;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    private $parentID;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $BossID;
-
-    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Units")
      */
     private $Parent;
@@ -72,30 +62,6 @@ class Units
     public function setType(string $type): self
     {
         $this->type = $type;
-
-        return $this;
-    }
-
-    public function getParentID(): ?int
-    {
-        return $this->parentID;
-    }
-
-    public function setParentID(?int $parentID): self
-    {
-        $this->parentID = $parentID;
-
-        return $this;
-    }
-
-    public function getBossID(): ?int
-    {
-        return $this->BossID;
-    }
-
-    public function setBossID(int $BossID): self
-    {
-        $this->BossID = $BossID;
 
         return $this;
     }

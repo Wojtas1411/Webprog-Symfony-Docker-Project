@@ -14,8 +14,8 @@ class UnitsType extends AbstractType
         $builder
             ->add('name')
             ->add('type')
-            ->add('parentID')
-            ->add('BossID')
+            ->add('Parent')
+            ->add('Boss')
         ;
     }
 
