@@ -17,40 +17,42 @@ class Engagement
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\ManyToOne(targetEntity="App\Entity\StaffCategory")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $PersonID;
+    private $StaffCategory;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\OneToOne(targetEntity="App\Entity\PersonalData", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $StaffCategoryID;
+    private $Person;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getPersonID(): ?int
+    public function getStaffCategory(): ?StaffCategory
     {
-        return $this->PersonID;
+        return $this->StaffCategory;
     }
 
-    public function setPersonID(int $PersonID): self
+    public function setStaffCategory(?StaffCategory $StaffCategory): self
     {
-        $this->PersonID = $PersonID;
+        $this->StaffCategory = $StaffCategory;
 
         return $this;
     }
 
-    public function getStaffCategoryID(): ?int
+    public function getPerson(): ?PersonalData
     {
-        return $this->StaffCategoryID;
+        return $this->Person;
     }
 
-    public function setStaffCategoryID(int $StaffCategoryID): self
+    public function setPerson(PersonalData $Person): self
     {
-        $this->StaffCategoryID = $StaffCategoryID;
+        $this->Person = $Person;
 
         return $this;
     }

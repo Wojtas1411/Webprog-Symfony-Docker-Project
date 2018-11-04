@@ -2,37 +2,89 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\HttpFoundation\Response;
 use App\Entity\User;
+use App\Form\UserType;
+use App\Repository\UserRepository;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
+/**
+ * @Route("/user")
+ */
 class UserController extends AbstractController
 {
     /**
-     * @Route("/user", name="user")
+     * @Route("/", name="user_index", methods="GET")
      */
-    public function index()
+    public function index(UserRepository $userRepository): Response
     {
+        return $this->render('user/index.html.twig', ['users' => $userRepository->findAll()]);
+    }
 
-        // you can fetch the EntityManager via $this->getDoctrine()
-        // or you can add an argument to your action: index(EntityManagerInterface $entityManager)
-        $entityManager = $this->getDoctrine()->getManager();
+    /**
+     * @Route("/new", name="user_new", methods="GET|POST")
+     */
+    public function new(Request $request): Response
+    {
+        $user = new User();
+        $form = $this->createForm(UserType::class, $user);
+        $form->handleRequest($request);
 
-        $product = new User();
-        $product->setUsername('admin');
-        $product->setRoles(['ROLE_ADMIN']);
-        $product->setPassword('admin');
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($user);
+            $em->flush();
 
-        // tell Doctrine you want to (eventually) save the Product (no queries yet)
-        $entityManager->persist($product);
+            return $this->redirectToRoute('user_index');
+        }
 
-        // actually executes the queries (i.e. the INSERT query)
-        $entityManager->flush();
+        return $this->render('user/new.html.twig', [
+            'user' => $user,
+            'form' => $form->createView(),
+        ]);
+    }
 
-        return new Response('Saved new product with id '.$product->getId());
-//        return $this->render('user/index.html.twig', [
-//            'controller_name' => 'UserController',
-//        ]);
+    /**
+     * @Route("/{id}", name="user_show", methods="GET")
+     */
+    public function show(User $user): Response
+    {
+        return $this->render('user/show.html.twig', ['user' => $user]);
+    }
+
+    /**
+     * @Route("/{id}/edit", name="user_edit", methods="GET|POST")
+     */
+    public function edit(Request $request, User $user): Response
+    {
+        $form = $this->createForm(UserType::class, $user);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $this->getDoctrine()->getManager()->flush();
+
+            return $this->redirectToRoute('user_edit', ['id' => $user->getId()]);
+        }
+
+        return $this->render('user/edit.html.twig', [
+            'user' => $user,
+            'form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route("/{id}", name="user_delete", methods="DELETE")
+     */
+    public function delete(Request $request, User $user): Response
+    {
+        if ($this->isCsrfTokenValid('delete'.$user->getId(), $request->request->get('_token'))) {
+            $em = $this->getDoctrine()->getManager();
+            $em->remove($user);
+            $em->flush();
+        }
+
+        return $this->redirectToRoute('user_index');
     }
 }

@@ -17,57 +17,59 @@ class Membership
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\ManyToOne(targetEntity="App\Entity\PersonalData", inversedBy="memberships")
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $PersonID;
+    private $Person;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Units")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $Unit;
 
     /**
      * @ORM\Column(type="integer")
      */
-    private $UnitID;
-
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $WorkingHoursWeekly;
+    private $WorkingHoursPerWeek;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getPersonID(): ?int
+    public function getPerson(): ?PersonalData
     {
-        return $this->PersonID;
+        return $this->Person;
     }
 
-    public function setPersonID(int $PersonID): self
+    public function setPerson(?PersonalData $Person): self
     {
-        $this->PersonID = $PersonID;
+        $this->Person = $Person;
 
         return $this;
     }
 
-    public function getUnitID(): ?int
+    public function getUnit(): ?Units
     {
-        return $this->UnitID;
+        return $this->Unit;
     }
 
-    public function setUnitID(int $UnitID): self
+    public function setUnit(?Units $Unit): self
     {
-        $this->UnitID = $UnitID;
+        $this->Unit = $Unit;
 
         return $this;
     }
 
-    public function getWorkingHoursWeekly(): ?int
+    public function getWorkingHoursPerWeek(): ?int
     {
-        return $this->WorkingHoursWeekly;
+        return $this->WorkingHoursPerWeek;
     }
 
-    public function setWorkingHoursWeekly(int $WorkingHoursWeekly): self
+    public function setWorkingHoursPerWeek(int $WorkingHoursPerWeek): self
     {
-        $this->WorkingHoursWeekly = $WorkingHoursWeekly;
+        $this->WorkingHoursPerWeek = $WorkingHoursPerWeek;
 
         return $this;
     }

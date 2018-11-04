@@ -51,6 +51,12 @@ class JobData
      */
     private $BankAccountNumber;
 
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\PersonalData", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $UserID;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -136,6 +142,18 @@ class JobData
     public function setBankAccountNumber(string $BankAccountNumber): self
     {
         $this->BankAccountNumber = $BankAccountNumber;
+
+        return $this;
+    }
+
+    public function getUserID(): ?PersonalData
+    {
+        return $this->UserID;
+    }
+
+    public function setUserID(PersonalData $UserID): self
+    {
+        $this->UserID = $UserID;
 
         return $this;
     }
