@@ -2,14 +2,14 @@
 
 namespace App\Form;
 
-use App\Entity\Adres;
+use App\Entity\JobData;
 use App\Form\DataTransformers\UserNameToPersonalDataTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class AdresType extends AbstractType
+class JobDataType extends AbstractType
 {
     private $transformer;
 
@@ -21,22 +21,23 @@ class AdresType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('prim')
-            ->add('Street')
-            ->add('Number')
-            ->add('Local')
-            ->add('PostalCode')
-            ->add('Town')
+            ->add('StartContract')
+            ->add('EndContract')
+            ->add('MonthlySalary')
+            ->add('WorkingHoursPerWeek')
+            ->add('BankInfo')
+            ->add('BankAccountNumber')
             ->add('User', TextType::class)
         ;
 
         $builder->get('User')->addModelTransformer($this->transformer);
+
     }
 
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Adres::class,
+            'data_class' => JobData::class,
         ]);
     }
 }

@@ -69,6 +69,11 @@ class PersonalData
      */
     private $phoneNumbers;
 
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\JobData", mappedBy="User", cascade={"persist", "remove"})
+     */
+    private $jobData;
+
     public function __construct()
     {
         $this->memberships = new ArrayCollection();
@@ -273,6 +278,23 @@ class PersonalData
             if ($phoneNumber->getUser() === $this) {
                 $phoneNumber->setUser(null);
             }
+        }
+
+        return $this;
+    }
+
+    public function getJobData(): ?JobData
+    {
+        return $this->jobData;
+    }
+
+    public function setJobData(JobData $jobData): self
+    {
+        $this->jobData = $jobData;
+
+        // set the owning side of the relation if necessary
+        if ($this !== $jobData->getUser()) {
+            $jobData->setUser($this);
         }
 
         return $this;

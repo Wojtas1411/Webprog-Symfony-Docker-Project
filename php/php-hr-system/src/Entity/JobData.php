@@ -17,9 +17,10 @@ class JobData
     private $id;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\OneToOne(targetEntity="App\Entity\PersonalData", inversedBy="jobData", cascade={"persist", "remove"})
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $OwnerID;
+    private $User;
 
     /**
      * @ORM\Column(type="date")
@@ -32,7 +33,7 @@ class JobData
     private $EndContract;
 
     /**
-     * @ORM\Column(type="float")
+     * @ORM\Column(type="integer")
      */
     private $MonthlySalary;
 
@@ -51,25 +52,19 @@ class JobData
      */
     private $BankAccountNumber;
 
-    /**
-     * @ORM\OneToOne(targetEntity="App\Entity\PersonalData", cascade={"persist", "remove"})
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $UserID;
-
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getOwnerID(): ?int
+    public function getUser(): ?PersonalData
     {
-        return $this->OwnerID;
+        return $this->User;
     }
 
-    public function setOwnerID(int $OwnerID): self
+    public function setUser(PersonalData $User): self
     {
-        $this->OwnerID = $OwnerID;
+        $this->User = $User;
 
         return $this;
     }
@@ -98,12 +93,12 @@ class JobData
         return $this;
     }
 
-    public function getMonthlySalary(): ?float
+    public function getMonthlySalary(): ?int
     {
         return $this->MonthlySalary;
     }
 
-    public function setMonthlySalary(float $MonthlySalary): self
+    public function setMonthlySalary(int $MonthlySalary): self
     {
         $this->MonthlySalary = $MonthlySalary;
 
@@ -142,18 +137,6 @@ class JobData
     public function setBankAccountNumber(string $BankAccountNumber): self
     {
         $this->BankAccountNumber = $BankAccountNumber;
-
-        return $this;
-    }
-
-    public function getUserID(): ?PersonalData
-    {
-        return $this->UserID;
-    }
-
-    public function setUserID(PersonalData $UserID): self
-    {
-        $this->UserID = $UserID;
 
         return $this;
     }

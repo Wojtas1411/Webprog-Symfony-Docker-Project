@@ -2,14 +2,14 @@
 
 namespace App\Form;
 
-use App\Entity\Adres;
+use App\Entity\Emails;
 use App\Form\DataTransformers\UserNameToPersonalDataTransformer;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class AdresType extends AbstractType
+class EmailsType extends AbstractType
 {
     private $transformer;
 
@@ -22,11 +22,7 @@ class AdresType extends AbstractType
     {
         $builder
             ->add('prim')
-            ->add('Street')
-            ->add('Number')
-            ->add('Local')
-            ->add('PostalCode')
-            ->add('Town')
+            ->add('Value')
             ->add('User', TextType::class)
         ;
 
@@ -36,7 +32,7 @@ class AdresType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => Adres::class,
+            'data_class' => Emails::class,
         ]);
     }
 }
