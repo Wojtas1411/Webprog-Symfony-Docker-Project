@@ -1,7 +1,9 @@
 security:
+    # uncommnet to enable encoder
     encoders:
         App\Entity\User:
-            algorithm: argon2i
+            #algorithm: argon2i
+            algorithm: plaintext
 
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:
@@ -10,12 +12,27 @@ security:
             entity:
                 class: App\Entity\User
                 property: username
+        memory_provider:
+            # provider type - one of the above
+            memory:
+                # custom options for that provider
+                users:
+                    user:  { password: '%env(USER_PASSWORD)%', roles: [ 'ROLE_USER' ] }
+                    admin: { password: '%env(ADMIN_PASSWORD)%', roles: [ 'ROLE_ADMIN' ] }
+        chain_provider:
+            chain:
+                providers: [memory_provider, app_user_provider]
     firewalls:
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
             anonymous: true
+            guard:
+                provider: app_user_provider
+                authenticators:
+                    - App\Security\LoginFormAuthenticator
+
 
             # activate different ways to authenticate
 
@@ -30,3 +47,8 @@ security:
     access_control:
         # - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
+
+    role_hierarchy:
+        ROLE_HR: ROLE_USER
+        ROLE_ADMIN: ROLE_HR
+

@@ -13,10 +13,7 @@ RUN php composer-setup.php
 RUN php -r "unlink('composer-setup.php');"
 RUN mv composer.phar /usr/local/bin/composer
 RUN chmod +x /usr/local/bin/composer
+# RUN mkdir /var/www/html/hr-system
 
-COPY ./php-hr-system/ /var/www/html/hr-system
+# COPY ./php-hr-system/ /var/www/html/hr-system
 
-# EXPOSE 8000
-
-# RUN php var/www/html/bin/console server:run
-# CMD ["php","var/www/html/bin/console","server:run"]
