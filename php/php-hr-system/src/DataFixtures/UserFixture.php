@@ -2,6 +2,7 @@
 
 namespace App\DataFixtures;
 
+use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
@@ -23,7 +24,6 @@ class UserFixture extends Fixture
         $manager->flush();
 
         $user = new User();
-
 
         $user->setPassword($this->passwordEncoder->encodePassword($user,'webprog'));
     }

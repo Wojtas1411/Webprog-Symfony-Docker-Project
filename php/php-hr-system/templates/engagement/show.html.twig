@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Engagement{% endblock %}
+
+{% block body %}
+    <h1>Engagement</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ engagement.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('engagement_index') }}">back to list</a>
+
+    <a href="{{ path('engagement_edit', {'id': engagement.id}) }}">edit</a>
+
+    {{ include('engagement/_delete_form.html.twig') }}
+{% endblock %}
