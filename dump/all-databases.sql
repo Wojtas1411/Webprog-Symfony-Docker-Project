@@ -384,7 +384,7 @@ UNLOCK TABLES;
 --
 
 /*!40000 ALTER TABLE `innodb_index_stats` DISABLE KEYS */;
-INSERT  IGNORE INTO `innodb_index_stats` VALUES ('meeting2','Accounts','PRIMARY','2018-08-28 11:07:53','n_diff_pfx01',2,1,'account'),('meeting2','Accounts','PRIMARY','2018-08-28 11:07:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('meeting2','Accounts','PRIMARY','2018-08-28 11:07:53','size',1,NULL,'Number of pages in the index'),('mysql','component','PRIMARY','2018-08-28 11:00:07','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2018-08-28 11:00:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2018-08-28 11:00:07','size',1,NULL,'Number of pages in the index'),('mysql','gtid_executed','PRIMARY','2018-08-28 11:00:07','n_diff_pfx01',0,1,'source_uuid'),('mysql','gtid_executed','PRIMARY','2018-08-28 11:00:07','n_diff_pfx02',0,1,'source_uuid,interval_start'),('mysql','gtid_executed','PRIMARY','2018-08-28 11:00:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_executed','PRIMARY','2018-08-28 11:00:07','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2018-08-28 11:00:08','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2018-08-28 11:00:08','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2018-08-28 11:00:08','size',1,NULL,'Number of pages in the index'),('webprog','adres','PRIMARY','2018-11-03 15:16:25','n_diff_pfx01',0,1,'id'),('webprog','adres','PRIMARY','2018-11-03 15:16:25','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','adres','PRIMARY','2018-11-03 15:16:25','size',1,NULL,'Number of pages in the index'),('webprog','emails','PRIMARY','2018-11-03 15:16:29','n_diff_pfx01',0,1,'id'),('webprog','emails','PRIMARY','2018-11-03 15:16:29','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','emails','PRIMARY','2018-11-03 15:16:29','size',1,NULL,'Number of pages in the index'),('webprog','engagement','PRIMARY','2018-11-03 15:16:27','n_diff_pfx01',0,1,'id'),('webprog','engagement','PRIMARY','2018-11-03 15:16:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','engagement','PRIMARY','2018-11-03 15:16:27','size',1,NULL,'Number of pages in the index'),('webprog','job_data','PRIMARY','2018-11-03 15:16:28','n_diff_pfx01',0,1,'id'),('webprog','job_data','PRIMARY','2018-11-03 15:16:28','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','job_data','PRIMARY','2018-11-03 15:16:28','size',1,NULL,'Number of pages in the index'),('webprog','membership','PRIMARY','2018-11-03 15:16:26','n_diff_pfx01',0,1,'id'),('webprog','membership','PRIMARY','2018-11-03 15:16:26','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','membership','PRIMARY','2018-11-03 15:16:26','size',1,NULL,'Number of pages in the index'),('webprog','migration_versions','PRIMARY','2018-11-03 15:16:17','n_diff_pfx01',0,1,'version'),('webprog','migration_versions','PRIMARY','2018-11-03 15:16:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','migration_versions','PRIMARY','2018-11-03 15:16:17','size',1,NULL,'Number of pages in the index'),('webprog','personal_data','PRIMARY','2018-11-03 15:16:27','n_diff_pfx01',0,1,'id'),('webprog','personal_data','PRIMARY','2018-11-03 15:16:27','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','personal_data','PRIMARY','2018-11-03 15:16:27','size',1,NULL,'Number of pages in the index'),('webprog','phone_numbers','PRIMARY','2018-11-03 15:16:25','n_diff_pfx01',0,1,'id'),('webprog','phone_numbers','PRIMARY','2018-11-03 15:16:25','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','phone_numbers','PRIMARY','2018-11-03 15:16:25','size',1,NULL,'Number of pages in the index'),('webprog','staff_category','PRIMARY','2018-11-03 15:16:26','n_diff_pfx01',0,1,'id'),('webprog','staff_category','PRIMARY','2018-11-03 15:16:26','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','staff_category','PRIMARY','2018-11-03 15:16:26','size',1,NULL,'Number of pages in the index'),('webprog','units','PRIMARY','2018-11-03 15:16:28','n_diff_pfx01',0,1,'id'),('webprog','units','PRIMARY','2018-11-03 15:16:28','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','units','PRIMARY','2018-11-03 15:16:28','size',1,NULL,'Number of pages in the index'),('webprog','user','PRIMARY','2018-11-03 15:16:26','n_diff_pfx01',0,1,'id'),('webprog','user','PRIMARY','2018-11-03 15:16:26','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','user','PRIMARY','2018-11-03 15:16:26','size',1,NULL,'Number of pages in the index'),('webprog','user','UNIQ_8D93D649F85E0677','2018-11-03 15:16:26','n_diff_pfx01',0,1,'username'),('webprog','user','UNIQ_8D93D649F85E0677','2018-11-03 15:16:26','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','user','UNIQ_8D93D649F85E0677','2018-11-03 15:16:26','size',1,NULL,'Number of pages in the index');
+INSERT  IGNORE INTO `innodb_index_stats` VALUES ('meeting2','Accounts','PRIMARY','2018-08-28 11:07:53','n_diff_pfx01',2,1,'account'),('meeting2','Accounts','PRIMARY','2018-08-28 11:07:53','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('meeting2','Accounts','PRIMARY','2018-08-28 11:07:53','size',1,NULL,'Number of pages in the index'),('mysql','component','PRIMARY','2018-08-28 11:00:07','n_diff_pfx01',0,1,'component_id'),('mysql','component','PRIMARY','2018-08-28 11:00:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','component','PRIMARY','2018-08-28 11:00:07','size',1,NULL,'Number of pages in the index'),('mysql','gtid_executed','PRIMARY','2018-08-28 11:00:07','n_diff_pfx01',0,1,'source_uuid'),('mysql','gtid_executed','PRIMARY','2018-08-28 11:00:07','n_diff_pfx02',0,1,'source_uuid,interval_start'),('mysql','gtid_executed','PRIMARY','2018-08-28 11:00:07','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('mysql','gtid_executed','PRIMARY','2018-08-28 11:00:07','size',1,NULL,'Number of pages in the index'),('sys','sys_config','PRIMARY','2018-08-28 11:00:08','n_diff_pfx01',6,1,'variable'),('sys','sys_config','PRIMARY','2018-08-28 11:00:08','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('sys','sys_config','PRIMARY','2018-08-28 11:00:08','size',1,NULL,'Number of pages in the index'),('webprog','adres','IDX_50C7CAEEA76ED395','2018-11-04 13:31:16','n_diff_pfx01',0,1,'user_id'),('webprog','adres','IDX_50C7CAEEA76ED395','2018-11-04 13:31:16','n_diff_pfx02',0,1,'user_id,id'),('webprog','adres','IDX_50C7CAEEA76ED395','2018-11-04 13:31:16','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','adres','IDX_50C7CAEEA76ED395','2018-11-04 13:31:16','size',1,NULL,'Number of pages in the index'),('webprog','adres','PRIMARY','2018-11-04 13:31:16','n_diff_pfx01',0,1,'id'),('webprog','adres','PRIMARY','2018-11-04 13:31:16','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','adres','PRIMARY','2018-11-04 13:31:16','size',1,NULL,'Number of pages in the index'),('webprog','emails','IDX_4C81E852A76ED395','2018-11-04 13:31:14','n_diff_pfx01',0,1,'user_id'),('webprog','emails','IDX_4C81E852A76ED395','2018-11-04 13:31:14','n_diff_pfx02',0,1,'user_id,id'),('webprog','emails','IDX_4C81E852A76ED395','2018-11-04 13:31:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','emails','IDX_4C81E852A76ED395','2018-11-04 13:31:14','size',1,NULL,'Number of pages in the index'),('webprog','emails','PRIMARY','2018-11-04 13:31:14','n_diff_pfx01',0,1,'id'),('webprog','emails','PRIMARY','2018-11-04 13:31:14','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','emails','PRIMARY','2018-11-04 13:31:14','size',1,NULL,'Number of pages in the index'),('webprog','engagement','IDX_D86F0141E3742DB0','2018-11-04 11:50:51','n_diff_pfx01',0,1,'staff_category_id'),('webprog','engagement','IDX_D86F0141E3742DB0','2018-11-04 11:50:51','n_diff_pfx02',0,1,'staff_category_id,id'),('webprog','engagement','IDX_D86F0141E3742DB0','2018-11-04 11:50:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','engagement','IDX_D86F0141E3742DB0','2018-11-04 11:50:51','size',1,NULL,'Number of pages in the index'),('webprog','engagement','PRIMARY','2018-11-04 11:50:51','n_diff_pfx01',0,1,'id'),('webprog','engagement','PRIMARY','2018-11-04 11:50:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','engagement','PRIMARY','2018-11-04 11:50:51','size',1,NULL,'Number of pages in the index'),('webprog','engagement','UNIQ_D86F0141217BBB47','2018-11-04 11:50:51','n_diff_pfx01',0,1,'person_id'),('webprog','engagement','UNIQ_D86F0141217BBB47','2018-11-04 11:50:51','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','engagement','UNIQ_D86F0141217BBB47','2018-11-04 11:50:51','size',1,NULL,'Number of pages in the index'),('webprog','job_data','PRIMARY','2018-11-04 18:23:59','n_diff_pfx01',0,1,'id'),('webprog','job_data','PRIMARY','2018-11-04 18:23:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','job_data','PRIMARY','2018-11-04 18:23:59','size',1,NULL,'Number of pages in the index'),('webprog','job_data','UNIQ_2A3F8522A76ED395','2018-11-04 18:23:59','n_diff_pfx01',0,1,'user_id'),('webprog','job_data','UNIQ_2A3F8522A76ED395','2018-11-04 18:23:59','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','job_data','UNIQ_2A3F8522A76ED395','2018-11-04 18:23:59','size',1,NULL,'Number of pages in the index'),('webprog','membership','IDX_86FFD285217BBB47','2018-11-04 11:50:54','n_diff_pfx01',0,1,'person_id'),('webprog','membership','IDX_86FFD285217BBB47','2018-11-04 11:50:54','n_diff_pfx02',0,1,'person_id,id'),('webprog','membership','IDX_86FFD285217BBB47','2018-11-04 11:50:54','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','membership','IDX_86FFD285217BBB47','2018-11-04 11:50:54','size',1,NULL,'Number of pages in the index'),('webprog','membership','IDX_86FFD285F8BD700D','2018-11-04 11:50:54','n_diff_pfx01',0,1,'unit_id'),('webprog','membership','IDX_86FFD285F8BD700D','2018-11-04 11:50:54','n_diff_pfx02',0,1,'unit_id,id'),('webprog','membership','IDX_86FFD285F8BD700D','2018-11-04 11:50:54','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','membership','IDX_86FFD285F8BD700D','2018-11-04 11:50:54','size',1,NULL,'Number of pages in the index'),('webprog','membership','PRIMARY','2018-11-04 11:50:54','n_diff_pfx01',0,1,'id'),('webprog','membership','PRIMARY','2018-11-04 11:50:54','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','membership','PRIMARY','2018-11-04 11:50:54','size',1,NULL,'Number of pages in the index'),('webprog','migration_versions','PRIMARY','2018-11-04 18:24:00','n_diff_pfx01',9,1,'version'),('webprog','migration_versions','PRIMARY','2018-11-04 18:24:00','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','migration_versions','PRIMARY','2018-11-04 18:24:00','size',1,NULL,'Number of pages in the index'),('webprog','personal_data','PRIMARY','2018-11-04 15:23:40','n_diff_pfx01',2,1,'id'),('webprog','personal_data','PRIMARY','2018-11-04 15:23:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','personal_data','PRIMARY','2018-11-04 15:23:40','size',1,NULL,'Number of pages in the index'),('webprog','personal_data','UNIQ_9CF9F45E9D86650F','2018-11-04 15:23:40','n_diff_pfx01',2,1,'user_id_id'),('webprog','personal_data','UNIQ_9CF9F45E9D86650F','2018-11-04 15:23:40','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','personal_data','UNIQ_9CF9F45E9D86650F','2018-11-04 15:23:40','size',1,NULL,'Number of pages in the index'),('webprog','phone_numbers','IDX_E7DC46CBA76ED395','2018-11-04 13:31:17','n_diff_pfx01',0,1,'user_id'),('webprog','phone_numbers','IDX_E7DC46CBA76ED395','2018-11-04 13:31:17','n_diff_pfx02',0,1,'user_id,id'),('webprog','phone_numbers','IDX_E7DC46CBA76ED395','2018-11-04 13:31:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','phone_numbers','IDX_E7DC46CBA76ED395','2018-11-04 13:31:17','size',1,NULL,'Number of pages in the index'),('webprog','phone_numbers','PRIMARY','2018-11-04 13:31:17','n_diff_pfx01',0,1,'id'),('webprog','phone_numbers','PRIMARY','2018-11-04 13:31:17','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','phone_numbers','PRIMARY','2018-11-04 13:31:17','size',1,NULL,'Number of pages in the index'),('webprog','staff_category','PRIMARY','2018-11-04 13:19:43','n_diff_pfx01',4,1,'id'),('webprog','staff_category','PRIMARY','2018-11-04 13:19:43','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','staff_category','PRIMARY','2018-11-04 13:19:43','size',1,NULL,'Number of pages in the index'),('webprog','units','IDX_E9B07449261FB672','2018-11-04 19:09:05','n_diff_pfx01',1,1,'boss_id'),('webprog','units','IDX_E9B07449261FB672','2018-11-04 19:09:05','n_diff_pfx02',1,1,'boss_id,id'),('webprog','units','IDX_E9B07449261FB672','2018-11-04 19:09:05','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','units','IDX_E9B07449261FB672','2018-11-04 19:09:05','size',1,NULL,'Number of pages in the index'),('webprog','units','IDX_E9B07449727ACA70','2018-11-04 19:09:05','n_diff_pfx01',0,1,'parent_id'),('webprog','units','IDX_E9B07449727ACA70','2018-11-04 19:09:05','n_diff_pfx02',0,1,'parent_id,id'),('webprog','units','IDX_E9B07449727ACA70','2018-11-04 19:09:05','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','units','IDX_E9B07449727ACA70','2018-11-04 19:09:05','size',1,NULL,'Number of pages in the index'),('webprog','units','PRIMARY','2018-11-04 19:09:05','n_diff_pfx01',0,1,'id'),('webprog','units','PRIMARY','2018-11-04 19:09:05','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','units','PRIMARY','2018-11-04 19:09:05','size',1,NULL,'Number of pages in the index'),('webprog','user','PRIMARY','2018-11-04 14:10:01','n_diff_pfx01',3,1,'id'),('webprog','user','PRIMARY','2018-11-04 14:10:01','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','user','PRIMARY','2018-11-04 14:10:01','size',1,NULL,'Number of pages in the index'),('webprog','user','UNIQ_8D93D649F85E0677','2018-11-04 14:10:01','n_diff_pfx01',3,1,'username'),('webprog','user','UNIQ_8D93D649F85E0677','2018-11-04 14:10:01','n_leaf_pages',1,NULL,'Number of leaf pages in the index'),('webprog','user','UNIQ_8D93D649F85E0677','2018-11-04 14:10:01','size',1,NULL,'Number of pages in the index');
 /*!40000 ALTER TABLE `innodb_index_stats` ENABLE KEYS */;
 
 --
@@ -392,7 +392,7 @@ INSERT  IGNORE INTO `innodb_index_stats` VALUES ('meeting2','Accounts','PRIMARY'
 --
 
 /*!40000 ALTER TABLE `innodb_table_stats` DISABLE KEYS */;
-INSERT  IGNORE INTO `innodb_table_stats` VALUES ('meeting2','Accounts','2018-08-28 11:07:53',2,1,0),('mysql','component','2018-08-28 11:00:07',0,1,0),('mysql','gtid_executed','2018-08-28 11:00:07',0,1,0),('sys','sys_config','2018-08-28 11:00:08',6,1,0),('webprog','adres','2018-11-03 15:16:25',0,1,0),('webprog','emails','2018-11-03 15:16:29',0,1,0),('webprog','engagement','2018-11-03 15:16:27',0,1,0),('webprog','job_data','2018-11-03 15:16:28',0,1,0),('webprog','membership','2018-11-03 15:16:26',0,1,0),('webprog','migration_versions','2018-11-03 15:16:17',0,1,0),('webprog','personal_data','2018-11-03 15:16:27',0,1,0),('webprog','phone_numbers','2018-11-03 15:16:25',0,1,0),('webprog','staff_category','2018-11-03 15:16:26',0,1,0),('webprog','units','2018-11-03 15:16:28',0,1,0),('webprog','user','2018-11-03 15:16:26',0,1,1);
+INSERT  IGNORE INTO `innodb_table_stats` VALUES ('meeting2','Accounts','2018-08-28 11:07:53',2,1,0),('mysql','component','2018-08-28 11:00:07',0,1,0),('mysql','gtid_executed','2018-08-28 11:00:07',0,1,0),('sys','sys_config','2018-08-28 11:00:08',6,1,0),('webprog','adres','2018-11-04 13:31:16',0,1,1),('webprog','emails','2018-11-04 13:31:14',0,1,1),('webprog','engagement','2018-11-04 11:50:51',0,1,2),('webprog','job_data','2018-11-04 18:23:59',0,1,1),('webprog','membership','2018-11-04 11:50:54',0,1,2),('webprog','migration_versions','2018-11-04 18:24:00',9,1,0),('webprog','personal_data','2018-11-04 15:23:40',2,1,1),('webprog','phone_numbers','2018-11-04 13:31:17',0,1,1),('webprog','staff_category','2018-11-04 13:19:43',4,1,0),('webprog','units','2018-11-04 19:09:05',1,1,2),('webprog','user','2018-11-04 14:10:01',3,1,1);
 /*!40000 ALTER TABLE `innodb_table_stats` ENABLE KEYS */;
 
 --
@@ -960,15 +960,17 @@ DROP TABLE IF EXISTS `adres`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `adres` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `owner_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `prim` tinyint(1) NOT NULL,
   `street` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `number` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `local` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `postal_code` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `town` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  PRIMARY KEY (`id`),
+  KEY `IDX_50C7CAEEA76ED395` (`user_id`),
+  CONSTRAINT `FK_50C7CAEEA76ED395` FOREIGN KEY (`user_id`) REFERENCES `personal_data` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -977,6 +979,7 @@ CREATE TABLE `adres` (
 
 LOCK TABLES `adres` WRITE;
 /*!40000 ALTER TABLE `adres` DISABLE KEYS */;
+INSERT INTO `adres` VALUES (1,1,1,'Cite Galerie Hondsbech','2','15','04-023','Niederkorn');
 /*!40000 ALTER TABLE `adres` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -989,11 +992,13 @@ DROP TABLE IF EXISTS `emails`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `emails` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `owner_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `prim` tinyint(1) NOT NULL,
   `value` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  PRIMARY KEY (`id`),
+  KEY `IDX_4C81E852A76ED395` (`user_id`),
+  CONSTRAINT `FK_4C81E852A76ED395` FOREIGN KEY (`user_id`) REFERENCES `personal_data` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1002,6 +1007,7 @@ CREATE TABLE `emails` (
 
 LOCK TABLES `emails` WRITE;
 /*!40000 ALTER TABLE `emails` DISABLE KEYS */;
+INSERT INTO `emails` VALUES (1,1,1,'john.doe@uni.lu'),(2,2,1,'anna.nova@uni.lu');
 /*!40000 ALTER TABLE `emails` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1016,8 +1022,12 @@ CREATE TABLE `engagement` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `person_id` int(11) NOT NULL,
   `staff_category_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_D86F0141217BBB47` (`person_id`),
+  KEY `IDX_D86F0141E3742DB0` (`staff_category_id`),
+  CONSTRAINT `FK_D86F0141217BBB47` FOREIGN KEY (`person_id`) REFERENCES `personal_data` (`id`),
+  CONSTRAINT `FK_D86F0141E3742DB0` FOREIGN KEY (`staff_category_id`) REFERENCES `staff_category` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1026,6 +1036,7 @@ CREATE TABLE `engagement` (
 
 LOCK TABLES `engagement` WRITE;
 /*!40000 ALTER TABLE `engagement` DISABLE KEYS */;
+INSERT INTO `engagement` VALUES (1,1,1);
 /*!40000 ALTER TABLE `engagement` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1038,15 +1049,17 @@ DROP TABLE IF EXISTS `job_data`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `job_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `owner_id` int(11) NOT NULL,
   `start_contract` date NOT NULL,
   `end_contract` date NOT NULL,
-  `monthly_salary` double NOT NULL,
+  `monthly_salary` int(11) NOT NULL,
   `working_hours_per_week` int(11) NOT NULL,
   `bank_info` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `bank_account_number` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_2A3F8522A76ED395` (`user_id`),
+  CONSTRAINT `FK_2A3F8522A76ED395` FOREIGN KEY (`user_id`) REFERENCES `personal_data` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1055,6 +1068,7 @@ CREATE TABLE `job_data` (
 
 LOCK TABLES `job_data` WRITE;
 /*!40000 ALTER TABLE `job_data` DISABLE KEYS */;
+INSERT INTO `job_data` VALUES (1,'2014-03-05','2017-03-06',500,40,'TrierBank','000000000000000000000',1);
 /*!40000 ALTER TABLE `job_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1069,9 +1083,13 @@ CREATE TABLE `membership` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `person_id` int(11) NOT NULL,
   `unit_id` int(11) NOT NULL,
-  `working_hours_weekly` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `working_hours_per_week` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_86FFD285217BBB47` (`person_id`),
+  KEY `IDX_86FFD285F8BD700D` (`unit_id`),
+  CONSTRAINT `FK_86FFD285217BBB47` FOREIGN KEY (`person_id`) REFERENCES `personal_data` (`id`),
+  CONSTRAINT `FK_86FFD285F8BD700D` FOREIGN KEY (`unit_id`) REFERENCES `units` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1080,6 +1098,7 @@ CREATE TABLE `membership` (
 
 LOCK TABLES `membership` WRITE;
 /*!40000 ALTER TABLE `membership` DISABLE KEYS */;
+INSERT INTO `membership` VALUES (1,1,2,12);
 /*!40000 ALTER TABLE `membership` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1102,7 +1121,7 @@ CREATE TABLE `migration_versions` (
 
 LOCK TABLES `migration_versions` WRITE;
 /*!40000 ALTER TABLE `migration_versions` DISABLE KEYS */;
-INSERT INTO `migration_versions` VALUES ('20181103151341');
+INSERT INTO `migration_versions` VALUES ('20181103151341'),('20181104110724'),('20181104111343'),('20181104115042'),('20181104131539'),('20181104132319'),('20181104133109'),('20181104181645'),('20181104182350'),('20181104190830'),('20181104190901');
 /*!40000 ALTER TABLE `migration_versions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1120,9 +1139,11 @@ CREATE TABLE `personal_data` (
   `birth_date` date DEFAULT NULL,
   `birth_place` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `photo` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `owner_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `user_id_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_9CF9F45E9D86650F` (`user_id_id`),
+  CONSTRAINT `FK_9CF9F45E9D86650F` FOREIGN KEY (`user_id_id`) REFERENCES `user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1131,6 +1152,7 @@ CREATE TABLE `personal_data` (
 
 LOCK TABLES `personal_data` WRITE;
 /*!40000 ALTER TABLE `personal_data` DISABLE KEYS */;
+INSERT INTO `personal_data` VALUES (1,'Doe','John','1970-01-01','Luxembourg',NULL,4),(2,'Nova','Anna','2016-09-15','Niederkorn',NULL,6);
 /*!40000 ALTER TABLE `personal_data` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1143,11 +1165,13 @@ DROP TABLE IF EXISTS `phone_numbers`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `phone_numbers` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `owner_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
   `prim` tinyint(1) NOT NULL,
   `value` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  PRIMARY KEY (`id`),
+  KEY `IDX_E7DC46CBA76ED395` (`user_id`),
+  CONSTRAINT `FK_E7DC46CBA76ED395` FOREIGN KEY (`user_id`) REFERENCES `personal_data` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1156,6 +1180,7 @@ CREATE TABLE `phone_numbers` (
 
 LOCK TABLES `phone_numbers` WRITE;
 /*!40000 ALTER TABLE `phone_numbers` DISABLE KEYS */;
+INSERT INTO `phone_numbers` VALUES (1,1,1,'123 456 789');
 /*!40000 ALTER TABLE `phone_numbers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1170,7 +1195,7 @@ CREATE TABLE `staff_category` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1179,6 +1204,7 @@ CREATE TABLE `staff_category` (
 
 LOCK TABLES `staff_category` WRITE;
 /*!40000 ALTER TABLE `staff_category` DISABLE KEYS */;
+INSERT INTO `staff_category` VALUES (1,'Profesor'),(2,'Assistant'),(3,'Secretary'),(4,'Administrative support');
 /*!40000 ALTER TABLE `staff_category` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1195,8 +1221,12 @@ CREATE TABLE `units` (
   `type` varchar(10) COLLATE utf8mb4_unicode_ci NOT NULL,
   `parent_id` int(11) DEFAULT NULL,
   `boss_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  PRIMARY KEY (`id`),
+  KEY `IDX_E9B07449727ACA70` (`parent_id`),
+  KEY `IDX_E9B07449261FB672` (`boss_id`),
+  CONSTRAINT `FK_E9B07449261FB672` FOREIGN KEY (`boss_id`) REFERENCES `personal_data` (`id`),
+  CONSTRAINT `FK_E9B07449727ACA70` FOREIGN KEY (`parent_id`) REFERENCES `units` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1205,6 +1235,7 @@ CREATE TABLE `units` (
 
 LOCK TABLES `units` WRITE;
 /*!40000 ALTER TABLE `units` DISABLE KEYS */;
+INSERT INTO `units` VALUES (2,'Faculty of Computing','Faculty',NULL,1);
 /*!40000 ALTER TABLE `units` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1222,7 +1253,7 @@ CREATE TABLE `user` (
   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `UNIQ_8D93D649F85E0677` (`username`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -1231,6 +1262,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` VALUES (1,'admin','[\"ROLE_ADMIN\"]','admin'),(3,'Cristina','[\"ROLE_HR\"]','password'),(4,'JohnDoe','[\"ROLE_USER\"]','password'),(6,'AnnaNova','[\"ROLE_HR\"]','password');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -1244,4 +1276,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-11-03 15:22:48
+-- Dump completed on 2018-11-06 14:34:56

@@ -19,6 +19,7 @@
     <!-- main nav bar-->
 
     <!-- Grey with black text -->
+
     {% if is_granted('ROLE_USER') %}
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <ul class="navbar-nav">
@@ -26,7 +27,12 @@
             <li class="nav-item active">
                 <a class="nav-link" href="/start">Start</a>
             </li>
-            <!--Place for mydata section-->
+            <li class="nav-item">
+                <a class="nav-link" href="/my/data">My Data</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">My Units</a>
+            </li>
             {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
                 <a class="nav-link" href="/user">Users</a>
@@ -71,6 +77,7 @@
             <!---->
         </ul>
     </nav>
+
     {% endif %}
 
     <div class="jumbotron jumbotron-fluid">

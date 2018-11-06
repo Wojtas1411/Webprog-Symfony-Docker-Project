@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}My Data{% endblock %}
+
+{% block body %}
+    {% if personal_data %}
+
+    <h1>My Data</h1>
+
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Id</th>
+            <td>{{ personal_data.id }}</td>
+        </tr>
+        <tr>
+            <th>FamilyName</th>
+            <td>{{ personal_data.FamilyName }}</td>
+        </tr>
+        <tr>
+            <th>FirstName</th>
+            <td>{{ personal_data.FirstName }}</td>
+        </tr>
+        <tr>
+            <th>BirthDate</th>
+            <td>{{ personal_data.BirthDate ? personal_data.BirthDate|date('Y-m-d') : '' }}</td>
+        </tr>
+        <tr>
+            <th>BirthPlace</th>
+            <td>{{ personal_data.BirthPlace }}</td>
+        </tr>
+        <tr>
+            <th>Photo</th>
+            <td>{{ personal_data.Photo }}</td>
+        </tr>
+        <tr>
+            <th>Emails</th>
+            <td>
+                {% for email in personal_data.emails %}
+                    {% if email.prim %} <b> {% endif %}
+                    {{ email.Value }} <br>
+                    {% if email.prim %} </b> {% endif %}
+                {% else %}
+                    No emails found
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <th>Phone Numbers</th>
+            <td>
+                {% for phone in personal_data.phoneNumbers %}
+                    {% if phone.prim %} <b> {% endif %}
+                    {{ phone.Value }} <br>
+                    {% if phone.prim %} </b> {% endif %}
+                {% else %}
+                    No phone numbers found
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <th>Addresses</th>
+            <td>
+                {% for adres in personal_data.adres %}
+                    {% if adres.prim %} <b> {% endif %}
+                    {{ adres.Street }} {{ adres.Number }} / {{ adres.Local }} <br>
+                    {{ adres.PostalCode }} {{ adres.Town }} <br>
+                    {% if adres.prim %} </b> {% endif %}
+                {% else %}
+                    No address found
+                {% endfor %}
+            </td>
+        </tr>
+        <tr>
+            <th>Memberships</th>
+            <td>
+
+
+                {% for mem in personal_data.memberships %}
+
+                        {{ mem.Unit.Name }} {#{{ mem.WorkingHoursPerWeek }} <!-- looks bad -->#}<br>
+
+                {% else %}
+                    No memberships available
+                {% endfor %}
+
+            </td>
+        </tr>
+        <tr>
+            <th>Engagement</th>
+            {% if my_engagement %}
+                <td>{{ my_engagement.StaffCategory.Name }}</td>
+            {% else %}
+                <td>No engagement available</td>
+            {% endif %}
+        </tr>
+        </tbody>
+    </table>
+
+    {% else %}
+    <center>No data available</center>
+    {% endif %}
+
+{% endblock %}
