@@ -12,6 +12,14 @@
                 <td>{{ job_datum.id }}</td>
             </tr>
             <tr>
+                <th>Family Name</th>
+                <td>{{ job_datum.FamilyName }}</td>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <td>{{ job_datum.FirstName }}</td>
+            </tr>
+            <tr>
                 <th>StartContract</th>
                 <td>{{ job_datum.StartContract ? job_datum.StartContract|date('Y-m-d') : '' }}</td>
             </tr>

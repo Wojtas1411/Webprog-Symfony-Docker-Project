@@ -9,6 +9,8 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Family Name</th>
+                <th>First Name</th>
                 <th>Prim</th>
                 <th>Value</th>
                 <th>actions</th>
@@ -18,6 +20,8 @@
         {% for email in emails %}
             <tr>
                 <td>{{ email.id }}</td>
+                <td>{{ email.FamilyName }}</td>
+                <td>{{ email.FirstName }}</td>
                 <td>{{ email.prim ? 'Yes' : 'No' }}</td>
                 <td>{{ email.Value }}</td>
                 <td>

@@ -19,20 +19,20 @@
     <!-- main nav bar-->
 
     <!-- Grey with black text -->
+    {% if is_granted('ROLE_USER') %}
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <ul class="navbar-nav">
-            {#
-            {% for item in navigation %}
-                <li class="{{ item.class }}"><a class="{{ item.aclass }}" href="{{ item.href }}">{{ item.caption }}</a></li>
-            {% endfor %}
-            #}
             <!---->
             <li class="nav-item active">
                 <a class="nav-link" href="/start">Start</a>
             </li>
+            <!--Place for mydata section-->
+            {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
                 <a class="nav-link" href="/user">Users</a>
             </li>
+            {% endif %}
+            {% if is_granted('ROLE_HR') %}
             <li class="nav-item">
                 <a class="nav-link" href="/personal/data">Personal Data</a>
             </li>
@@ -60,8 +60,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/membership">Membership</a>
             </li>
+            {% endif %}
             <li class="nav-item">
-                <a class="nav-link" href="#">Logout</a>
+                <a class="nav-link" href="/logout">Logout</a>
             </li>
             <!--
             <li class="nav-item">
@@ -70,6 +71,7 @@
             <!---->
         </ul>
     </nav>
+    {% endif %}
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">

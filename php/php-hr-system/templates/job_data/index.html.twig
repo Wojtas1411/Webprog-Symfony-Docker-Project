@@ -9,6 +9,8 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Family Name</th>
+                <th>First Name</th>
                 <th>StartContract</th>
                 <th>EndContract</th>
                 <th>MonthlySalary</th>
@@ -22,6 +24,8 @@
         {% for job_datum in job_datas %}
             <tr>
                 <td>{{ job_datum.id }}</td>
+                <td>{{ job_datum.FamilyName }}</td>
+                <td>{{ job_datum.FirstName }}</td>
                 <td>{{ job_datum.StartContract ? job_datum.StartContract|date('Y-m-d') : '' }}</td>
                 <td>{{ job_datum.EndContract ? job_datum.EndContract|date('Y-m-d') : '' }}</td>
                 <td>{{ job_datum.MonthlySalary }}</td>

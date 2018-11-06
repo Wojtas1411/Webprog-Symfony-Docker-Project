@@ -140,4 +140,14 @@ class Adres
 
         return $this;
     }
+
+    public function getFirstName(): ?string
+    {
+        return $this->getUser()->getFirstName();
+    }
+
+    public function getFamilyName(): ?string
+    {
+        return $this->getUser()->getFamilyName();
+    }
 }

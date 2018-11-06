@@ -9,6 +9,8 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Family Name</th>
+                <th>First Name</th>
                 <th>Prim</th>
                 <th>Value</th>
                 <th>actions</th>
@@ -18,6 +20,8 @@
         {% for phone_number in phone_numbers %}
             <tr>
                 <td>{{ phone_number.id }}</td>
+                <td>{{ phone_number.FamilyName }}</td>
+                <td>{{ phone_number.FirstName }}</td>
                 <td>{{ phone_number.prim ? 'Yes' : 'No' }}</td>
                 <td>{{ phone_number.Value }}</td>
                 <td>

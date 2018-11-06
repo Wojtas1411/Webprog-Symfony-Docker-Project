@@ -9,6 +9,8 @@
         <thead>
             <tr>
                 <th>Id</th>
+                <th>Family Name</th>
+                <th>First Name</th>
                 <th>Prim</th>
                 <th>Street</th>
                 <th>Number</th>
@@ -22,6 +24,8 @@
         {% for adre in adres %}
             <tr>
                 <td>{{ adre.id }}</td>
+                <td>{{ adre.FamilyName }}</td>
+                <td>{{ adre.FirstName }}</td>
                 <td>{{ adre.prim ? 'Yes' : 'No' }}</td>
                 <td>{{ adre.Street }}</td>
                 <td>{{ adre.Number }}</td>
