@@ -11,6 +11,8 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Type</th>
+                <th>Parent Unit</th>
+                <th>Superior</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -20,6 +22,8 @@
                 <td>{{ unit.id }}</td>
                 <td>{{ unit.name }}</td>
                 <td>{{ unit.type }}</td>
+                <td>{{ unit.parentName }}</td>
+                <td>{{ unit.Boss.FamilyName }} {{ unit.Boss.FirstName }}</td>
                 <td>
                     <a href="{{ path('units_show', {'id': unit.id}) }}">show</a>
                     <a href="{{ path('units_edit', {'id': unit.id}) }}">edit</a>

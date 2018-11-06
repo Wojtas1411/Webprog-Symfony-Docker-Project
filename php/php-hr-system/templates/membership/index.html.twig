@@ -9,7 +9,9 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>WorkingHoursPerWeek</th>
+                <th>Employee</th>
+                <th>Unit</th>
+                <th>Working Hours Per Week</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -17,6 +19,8 @@
         {% for membership in memberships %}
             <tr>
                 <td>{{ membership.id }}</td>
+                <td>{{ membership.Person.FamilyName }} {{ membership.Person.FirstName }}</td>
+                <td>{{ membership.Unit.Name }}</td>
                 <td>{{ membership.WorkingHoursPerWeek }}</td>
                 <td>
                     <a href="{{ path('membership_show', {'id': membership.id}) }}">show</a>

@@ -11,6 +11,14 @@
                 <th>Id</th>
                 <td>{{ engagement.id }}</td>
             </tr>
+            <tr>
+                <th>Employee</th>
+                <td>{{ engagement.Person.FamilyName }} {{ engagement.Person.FirstName }}</td>
+            </tr>
+            <tr>
+                <th>Position</th>
+                <td>{{ engagement.StaffCategory.Name }}</td>
+            </tr>
         </tbody>
     </table>
 

@@ -12,6 +12,14 @@
                 <td>{{ membership.id }}</td>
             </tr>
             <tr>
+                <th>Employee</th>
+                <td>{{ membership.Person.FamilyName }} {{ membership.Person.FirstName }}</td>
+            </tr>
+            <tr>
+                <th>Unit</th>
+                <td>{{ membership.Unit.Name }}</td>
+            </tr>
+            <tr>
                 <th>WorkingHoursPerWeek</th>
                 <td>{{ membership.WorkingHoursPerWeek }}</td>
             </tr>

@@ -19,6 +19,14 @@
                 <th>Type</th>
                 <td>{{ unit.type }}</td>
             </tr>
+            <tr>
+                <th>Parent Unit</th>
+                <td>{{ unit.parentName }}</td>
+            </tr>
+            <tr>
+                <th>Superior</th>
+                <td>{{ unit.Boss.FamilyName }} {{ unit.Boss.FirstName }}</td>
+            </tr>
         </tbody>
     </table>
 

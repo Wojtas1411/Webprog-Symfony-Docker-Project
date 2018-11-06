@@ -31,6 +31,43 @@
                 <th>Photo</th>
                 <td>{{ personal_datum.Photo }}</td>
             </tr>
+            <tr>
+                <th>Emails</th>
+                <td>
+                    {% for email in personal_datum.emails %}
+                        {% if email.prim %} <b> {% endif %}
+                        {{ email.Value }} <br>
+                        {% if email.prim %} </b> {% endif %}
+                    {% else %}
+                        No emails found
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <th>Phone Numbers</th>
+                <td>
+                    {% for phone in personal_datum.phoneNumbers %}
+                        {% if phone.prim %} <b> {% endif %}
+                        {{ phone.Value }} <br>
+                        {% if phone.prim %} </b> {% endif %}
+                    {% else %}
+                        No phone numbers found
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <th>Addresses</th>
+                <td>
+                    {% for adres in personal_datum.adres %}
+                        {% if adres.prim %} <b> {% endif %}
+                        {{ adres.Street }} {{ adres.Number }} / {{ adres.Local }} <br>
+                        {{ adres.PostalCode }} {{ adres.Town }} <br>
+                        {% if adres.prim %} </b> {% endif %}
+                    {% else %}
+                        No address found
+                    {% endfor %}
+                </td>
+            </tr>
         </tbody>
     </table>
 

@@ -89,4 +89,12 @@ class Units
 
         return $this;
     }
+
+    public function getParentName(): ?string
+    {
+        if($this->getParent() === null){
+            return "None";
+        }
+        return $this->getParent()->getName();
+    }
 }
