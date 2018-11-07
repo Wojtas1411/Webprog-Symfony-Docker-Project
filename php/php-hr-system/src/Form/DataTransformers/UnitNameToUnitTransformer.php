@@ -46,6 +46,10 @@ class UnitNameToUnitTransformer implements DataTransformerInterface
      */
     public function reverseTransform($unitName)
     {
+        if ($unitName == "None"){
+            return null;
+        }
+
         $unit = $this->entityManager->getRepository(Units::class)->findOneBy(['name' => $unitName]);
 
 
@@ -54,7 +58,7 @@ class UnitNameToUnitTransformer implements DataTransformerInterface
             // this message is not shown to the user
             // see the invalid_message option
             throw new TransformationFailedException(sprintf(
-                'An user with username "%s" does not exist!',
+                'An user with unitname "%s" does not exist!',
                 $unitName
             ));
         }

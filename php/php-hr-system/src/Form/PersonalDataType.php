@@ -8,6 +8,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 
 class PersonalDataType extends AbstractType
 {
@@ -25,7 +26,7 @@ class PersonalDataType extends AbstractType
         $builder
             ->add('FamilyName')
             ->add('FirstName')
-            ->add('BirthDate')
+            ->add('BirthDate', DateType::class, array('years'=>range(date("Y")-80,date("Y"))))
             ->add('BirthPlace')
             ->add('Photo')
             ->add('UserID', TextType::class)

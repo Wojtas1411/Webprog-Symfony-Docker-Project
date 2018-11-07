@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+
+    {% for one in all %}
+    <h2> {{ one.unit.name }}</h2>
+    <table class="table">
+        {% if one.members %}
+        <thead>
+        <tr>
+            <th>Family Name</th>
+            <th>First Name</th>
+            <th>BirthDate</th>
+            <th>BirthPlace</th>
+            <th>Photo</th>
+            <th>Emails</th>
+            <th>Phone Numbers</th>
+            <th>Addresses</th>
+        </tr>
+        </thead>
+        {% endif %}
+        <tbody>
+        {% for member in one.members %}
+            <tr>
+                <td>{{ member.Person.FamilyName }}</td>
+                <td>{{ member.Person.FirstName }}</td>
+                <td>{{ member.Person.BirthDate ? member.Person.BirthDate|date('Y-m-d') : ''}}</td>
+                <td>{{ member.Person.BirthPlace }}</td>
+                <td>{{ member.Person.Photo }}</td>
+
+                <td>
+                    {% for email in member.Person.emails %}
+                        {% if email.prim %} <b> {% endif %}
+                        {{ email.Value }} <br>
+                        {% if email.prim %} </b> {% endif %}
+                    {% else %}
+                        No emails found
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for phone in member.Person.phoneNumbers %}
+                        {% if phone.prim %} <b> {% endif %}
+                        {{ phone.Value }} <br>
+                        {% if phone.prim %} </b> {% endif %}
+                    {% else %}
+                        No phone numbers found
+                    {% endfor %}
+                </td>
+                <td>
+                    {% for adres in member.Person.adres %}
+                        {% if adres.prim %} <b> {% endif %}
+                        {{ adres.Street }} {{ adres.Number }} / {{ adres.Local }} <br>
+                        {{ adres.PostalCode }} {{ adres.Town }} <br>
+                        {% if adres.prim %} </b> {% endif %}
+                    {% else %}
+                        No address found
+                    {% endfor %}
+                </td>
+            </tr>
+
+        {% else %}
+            <tr>
+                <td>Nothing to display</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    {% else %}
+        <center>Nothing to display</center>
+    {% endfor %}
+
+{% endblock %}
