@@ -90,4 +90,14 @@ class PhoneNumbers
     {
         return $this->getUser()->getFamilyName();
     }
+
+    public function toArray(): ?array
+    {
+        $ret = array();
+        $ret["id"] = $this->getId();
+        $ret["username"] = $this->getUser()->getUserID()->getUsername();
+        $ret["prim"] = $this->getPrim();
+        $ret["value"] = $this->getValue();
+        return $ret;
+    }
 }

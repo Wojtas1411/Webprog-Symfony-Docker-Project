@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit TemporaryPersonalData{% endblock %}
+
+{% block body %}
+    <h1>Edit TemporaryPersonalData</h1>
+
+    {{ include('temporary_personal_data/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('temporary_personal_data_index') }}">back to list</a>
+
+    {{ include('temporary_personal_data/_delete_form.html.twig') }}
+{% endblock %}

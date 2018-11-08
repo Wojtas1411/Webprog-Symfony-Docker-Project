@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New TemporaryPersonalData{% endblock %}
+
+{% block body %}
+    <h1>Create new TemporaryPersonalData</h1>
+
+    {{ include('temporary_personal_data/_form.html.twig') }}
+
+    <a href="{{ path('temporary_personal_data_index') }}">back to list</a>
+{% endblock %}

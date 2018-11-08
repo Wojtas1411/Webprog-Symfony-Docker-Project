@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}TemporaryPersonalData{% endblock %}
+
+{% block body %}
+    <h1>TemporaryPersonalData</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ temporary_personal_datum.id }}</td>
+            </tr>
+            <tr>
+                <th>Timestamp</th>
+                <td>{{ temporary_personal_datum.Timestamp ? temporary_personal_datum.Timestamp|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>UserID</th>
+                <td>{{ temporary_personal_datum.UserID }}</td>
+            </tr>
+            <tr>
+                <th>FamilyName</th>
+                <td>{{ temporary_personal_datum.FamilyName }}</td>
+            </tr>
+            <tr>
+                <th>FirstName</th>
+                <td>{{ temporary_personal_datum.FirstName }}</td>
+            </tr>
+            <tr>
+                <th>BirthDate</th>
+                <td>{{ temporary_personal_datum.BirthDate ? temporary_personal_datum.BirthDate|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>BirthPlace</th>
+                <td>{{ temporary_personal_datum.BirthPlace }}</td>
+            </tr>
+            <tr>
+                <th>Photo</th>
+                <td>{{ temporary_personal_datum.Photo }}</td>
+            </tr>
+            <tr>
+                <th>Adres</th>
+                <td>
+                    {%for adres in temporary_personal_datum.adres %}
+                        {% if adres.prim %} <b> {% endif %}
+                        {{ adres.street }} {{ adres.number }}/{{ adres.local }}<br>
+                        {{ adres.postalCode }} {{ adres.town }}<br>
+                        {% if adres.prim %} </b> {% endif %}
+                    {% else %}
+                        No addresses available
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <th>Emails</th>
+                <td>
+                    {% for email in temporary_personal_datum.emails %}
+                        {% if email.prim %} <b> {% endif %}
+                        {{ email.value }}<br>
+                        {% if email.prim %} </b> {% endif %}
+                    {% else %}
+                        No addresses available
+                    {% endfor %}
+                </td>
+            </tr>
+            <tr>
+                <th>PhoneNumbers</th>
+                <td>
+                    {% for phone in temporary_personal_datum.phoneNumbers %}
+                        {% if phone.prim %} <b> {% endif %}
+                        {{ phone.value }}<br>
+                        {% if phone.prim %} </b> {% endif %}
+                    {% else %}
+                        No addresses available
+                    {% endfor %}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('temporary_personal_data_index') }}">back to list</a>
+
+    <a href="{{ path('temporary_personal_data_edit', {'id': temporary_personal_datum.id}) }}">edit</a>
+
+    {{ include('temporary_personal_data/_delete_form.html.twig') }}
+{% endblock %}

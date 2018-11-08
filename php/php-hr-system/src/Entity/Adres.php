@@ -152,4 +152,18 @@ class Adres
     {
         return $this->getUser()->getFamilyName();
     }
+
+    public function toArray(): ?array
+    {
+        $ret = array();
+        $ret["id"] = $this->getId();
+        $ret["username"] = $this->getUser()->getUserID()->getUsername();
+        $ret["prim"] = $this->getPrim();
+        $ret["street"] = $this->getStreet();
+        $ret["number"] = $this->getNumber();
+        $ret["local"] = $this->getLocal();
+        $ret["postalCode"] = $this->getPostalCode();
+        $ret["town"] = $this->getTown();
+        return $ret;
+    }
 }
