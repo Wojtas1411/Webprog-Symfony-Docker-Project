@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PhoneNumbersRepository")
@@ -23,6 +24,11 @@ class PhoneNumbers
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Regex(
+     *     pattern="/[\+]{0,1}[\d\- ]{4,}/",
+     *     match=true,
+     *     message="Not a valid phone number"
+     * )
      */
     private $Value;
 

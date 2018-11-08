@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\MembershipRepository")
@@ -30,6 +31,12 @@ class Membership
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\Range(
+     *      min = 1,
+     *      max = 40,
+     *      minMessage = "Working Hours per week must be at least {{ limit }}",
+     *      maxMessage = "Working Hours per week can be max {{ limit }}"
+     * )
      */
     private $WorkingHoursPerWeek;
 
