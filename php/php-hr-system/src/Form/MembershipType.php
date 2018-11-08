@@ -14,6 +14,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Doctrine\ORM\EntityManagerInterface;
 
+
 class MembershipType extends AbstractType
 {
     private $transformer;

@@ -4,9 +4,11 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use App\Validator\Constraints as MyAssert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\EmailsRepository")
+ * @MyAssert\ConstraintPrimary
  */
 class Emails
 {
@@ -23,7 +25,7 @@ class Emails
     private $prim;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\Email(
      *     message = "The email '{{ value }}' is not a valid email."
      * )

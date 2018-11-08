@@ -4,9 +4,11 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use App\Validator\Constraints as MyAssert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\PhoneNumbersRepository")
+ * @MyAssert\ConstraintPrimary
  */
 class PhoneNumbers
 {
@@ -23,7 +25,7 @@ class PhoneNumbers
     private $prim;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, unique=true)
      * @Assert\Regex(
      *     pattern="/[\+]{0,1}[\d\- ]{4,}/",
      *     match=true,

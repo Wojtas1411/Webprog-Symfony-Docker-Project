@@ -3,9 +3,11 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use App\Validator\Constraints as MyAssert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\AdresRepository")
+ * @MyAssert\ConstraintPrimary
  */
 class Adres
 {
