@@ -28,6 +28,8 @@ class PersonalDataController extends AbstractController
      */
     public function new(Request $request): Response
     {
+        $this->denyAccessUnlessGranted('ROLE_ADMIN', null, 'User tried to access a page without having ROLE_ADMIN');
+
         $personalDatum = new PersonalData();
         $form = $this->createForm(PersonalDataType::class, $personalDatum);
         $form->handleRequest($request);

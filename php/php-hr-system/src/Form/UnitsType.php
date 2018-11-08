@@ -4,7 +4,6 @@ namespace App\Form;
 
 use App\Entity\PersonalData;
 use App\Entity\Units;
-use App\Repository\UnitsRepository;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -44,7 +43,7 @@ class UnitsType extends AbstractType
 
         $builder
             ->add('name')
-            ->add('type', ChoiceType::class, array('choices' => array('Faculty'=>"Faculty", "Research unit"=>"Research")))
+            ->add('type', ChoiceType::class, array('choices' => array('Faculty'=>"Faculty", "Research unit"=>"Research", "Other"=>"Other")))
             ->add('Parent', ChoiceType::class, array('choices' => $faculty_choices))
             ->add('Boss', ChoiceType::class, array('choices' => $boss_choices))
             //->add('Parent', TextType::class)
