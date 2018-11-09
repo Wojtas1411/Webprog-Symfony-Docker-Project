@@ -7,7 +7,7 @@
 
     {{ include('phone_numbers/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('phone_numbers_index') }}">back to list</a>
+    <a href="{{ path('phone_numbers_index') }}" class="btn btn-primary">back to list</a>
 
     {{ include('phone_numbers/_delete_form.html.twig') }}
 {% endblock %}

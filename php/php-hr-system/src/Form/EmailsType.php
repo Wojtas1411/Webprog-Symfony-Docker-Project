@@ -5,6 +5,7 @@ namespace App\Form;
 use App\Entity\Emails;
 use App\Form\DataTransformers\UserNameToPersonalDataTransformer;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -33,7 +34,7 @@ class EmailsType extends AbstractType
 
         $builder
             ->add('prim')
-            ->add('Value')
+            ->add('Value', EmailType::class)
             ->add('User', ChoiceType::class, array('choices' => $choices))
             //->add('User', TextType::class)
         ;

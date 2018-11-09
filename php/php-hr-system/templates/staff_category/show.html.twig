@@ -18,9 +18,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('staff_category_index') }}">back to list</a>
+    <a href="{{ path('staff_category_index') }}" class="btn btn-primary">back to list</a>
 
-    <a href="{{ path('staff_category_edit', {'id': staff_category.id}) }}">edit</a>
+    <a href="{{ path('staff_category_edit', {'id': staff_category.id}) }}" class="btn btn-primary">edit</a>
 
     {{ include('staff_category/_delete_form.html.twig') }}
 {% endblock %}

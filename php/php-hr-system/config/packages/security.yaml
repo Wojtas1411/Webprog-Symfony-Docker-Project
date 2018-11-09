@@ -58,7 +58,9 @@ security:
          - { path: ^/phone/numbers, roles: ROLE_HR }
          - { path: ^/staff/category, roles: ROLE_HR }
          - { path: ^/units, roles: ROLE_HR }
+         - { path: ^/view/requests, roles: ROLE_HR }
          - { path: ^/my, roles: ROLE_USER }
+         - { path: ^/temporary/personal/data, roles: ROLE_USER }
 
 
     role_hierarchy:

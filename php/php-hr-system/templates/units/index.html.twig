@@ -25,8 +25,8 @@
                 <td>{{ unit.parentName }}</td>
                 <td>{{ unit.Boss.FamilyName }} {{ unit.Boss.FirstName }}</td>
                 <td>
-                    <a href="{{ path('units_show', {'id': unit.id}) }}">show</a>
-                    <a href="{{ path('units_edit', {'id': unit.id}) }}">edit</a>
+                    <a href="{{ path('units_show', {'id': unit.id}) }}" class="btn btn-primary">show</a>
+                    <a href="{{ path('units_edit', {'id': unit.id}) }}" class="btn btn-primary">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -37,5 +37,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('units_new') }}">Create new</a>
+    <a href="{{ path('units_new') }}" class="btn btn-primary">Create new</a>
 {% endblock %}

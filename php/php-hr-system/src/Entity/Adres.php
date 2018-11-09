@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 use App\Validator\Constraints as MyAssert;
 
 /**
@@ -25,26 +26,31 @@ class Adres
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Regex("/^[A-Za-z ]{2,}/")
      */
     private $Street;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Regex("/^[0-9A-Za-z ]{1,}/")
      */
     private $Number;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
+     * @Assert\Regex("/^[0-9A-Za-z ]{1,}/")
      */
     private $Local;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Regex("/^[0-9A-Za-z\- ]{3,10}/")
      */
     private $PostalCode;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Regex("/^[A-Za-z \-]{2,}/")
      */
     private $Town;
 

@@ -23,8 +23,8 @@
                 <td>{{ membership.Unit.Name }}</td>
                 <td>{{ membership.WorkingHoursPerWeek }}</td>
                 <td>
-                    <a href="{{ path('membership_show', {'id': membership.id}) }}">show</a>
-                    <a href="{{ path('membership_edit', {'id': membership.id}) }}">edit</a>
+                    <a href="{{ path('membership_show', {'id': membership.id}) }}" class="btn btn-primary">show</a>
+                    <a href="{{ path('membership_edit', {'id': membership.id}) }}" class="btn btn-primary">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -35,5 +35,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('membership_new') }}">Create new</a>
+    <a href="{{ path('membership_new') }}" class="btn btn-primary">Create new</a>
 {% endblock %}

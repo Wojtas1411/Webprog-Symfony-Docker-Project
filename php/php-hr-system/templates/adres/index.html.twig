@@ -33,8 +33,8 @@
                 <td>{{ adre.PostalCode }}</td>
                 <td>{{ adre.Town }}</td>
                 <td>
-                    <a href="{{ path('adres_show', {'id': adre.id}) }}">show</a>
-                    <a href="{{ path('adres_edit', {'id': adre.id}) }}">edit</a>
+                    <a href="{{ path('adres_show', {'id': adre.id}) }}" class="btn btn-primary">show</a>
+                    <a href="{{ path('adres_edit', {'id': adre.id}) }}" class="btn btn-primary">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -45,5 +45,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('adres_new') }}">Create new</a>
+    <a href="{{ path('adres_new') }}" class="btn btn-primary">Create new</a>
 {% endblock %}

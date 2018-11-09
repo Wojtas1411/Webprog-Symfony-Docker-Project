@@ -62,8 +62,8 @@
                     {% endfor %}
                 </td>
                 <td>
-                    <a href="{{ path('temporary_personal_data_show', {'id': temporary_personal_datum.id}) }}">show</a>
-                    <a href="{{ path('temporary_personal_data_edit', {'id': temporary_personal_datum.id}) }}">edit</a>
+                    <a href="{{ path('temporary_personal_data_show', {'id': temporary_personal_datum.id}) }}" class="btn btn-primary">show</a>
+                    <a href="{{ path('temporary_personal_data_edit', {'id': temporary_personal_datum.id}) }}" class="btn btn-primary">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -74,5 +74,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('temporary_personal_data_new') }}">Create new</a>
+    {#<!--<a href="{{ path('temporary_personal_data_new') }}">Create new</a>-->#}
 {% endblock %}

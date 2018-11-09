@@ -25,8 +25,8 @@
                 <td>{{ phone_number.prim ? 'Yes' : 'No' }}</td>
                 <td>{{ phone_number.Value }}</td>
                 <td>
-                    <a href="{{ path('phone_numbers_show', {'id': phone_number.id}) }}">show</a>
-                    <a href="{{ path('phone_numbers_edit', {'id': phone_number.id}) }}">edit</a>
+                    <a href="{{ path('phone_numbers_show', {'id': phone_number.id}) }}" class="btn btn-primary">show</a>
+                    <a href="{{ path('phone_numbers_edit', {'id': phone_number.id}) }}" class="btn btn-primary">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -37,5 +37,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('phone_numbers_new') }}">Create new</a>
+    <a href="{{ path('phone_numbers_new') }}" class="btn btn-primary">Create new</a>
 {% endblock %}

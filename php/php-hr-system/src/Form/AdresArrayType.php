@@ -9,6 +9,7 @@
 namespace App\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -23,7 +24,7 @@ class AdresArrayType extends AbstractType
             //->add('prim')
             ->add('street')
             ->add('number')
-            ->add('local')
+            ->add('local',TextType::class, ['required'=>false])
             ->add('postalCode')
             ->add('town')
         ;

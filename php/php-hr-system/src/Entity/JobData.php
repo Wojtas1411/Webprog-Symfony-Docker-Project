@@ -35,6 +35,9 @@ class JobData
 
     /**
      * @ORM\Column(type="integer")
+     * @Assert\GreaterThanOrEqual(
+     *     value = 0
+     * )
      */
     private $MonthlySalary;
 
@@ -51,6 +54,7 @@ class JobData
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\Regex("/^[0-9A-Za-z ]{2,}/")
      */
     private $BankInfo;
 

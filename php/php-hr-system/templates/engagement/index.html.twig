@@ -21,8 +21,8 @@
                 <td>{{ engagement.Person.FamilyName }} {{ engagement.Person.FirstName }}</td>
                 <td>{{ engagement.StaffCategory.Name }}</td>
                 <td>
-                    <a href="{{ path('engagement_show', {'id': engagement.id}) }}">show</a>
-                    <a href="{{ path('engagement_edit', {'id': engagement.id}) }}">edit</a>
+                    <a href="{{ path('engagement_show', {'id': engagement.id}) }}" class="btn btn-primary">show</a>
+                    <a href="{{ path('engagement_edit', {'id': engagement.id}) }}" class="btn btn-primary">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -33,5 +33,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('engagement_new') }}">Create new</a>
+    <a href="{{ path('engagement_new') }}" class="btn btn-primary">Create new</a>
 {% endblock %}

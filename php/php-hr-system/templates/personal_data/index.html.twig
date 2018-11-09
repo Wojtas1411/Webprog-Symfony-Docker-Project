@@ -27,8 +27,8 @@
                 <td>{{ personal_datum.BirthPlace }}</td>
                 <td>{{ personal_datum.Photo }}</td>
                 <td>
-                    <a href="{{ path('personal_data_show', {'id': personal_datum.id}) }}">show</a>
-                    <a href="{{ path('personal_data_edit', {'id': personal_datum.id}) }}">edit</a>
+                    <a href="{{ path('personal_data_show', {'id': personal_datum.id}) }}" class="btn btn-primary">show</a>
+                    <a href="{{ path('personal_data_edit', {'id': personal_datum.id}) }}" class="btn btn-primary">edit</a>
                 </td>
             </tr>
         {% else %}
@@ -40,7 +40,7 @@
     </table>
 
     {% if is_granted('ROLE_ADMIN') %}
-    <a href="{{ path('personal_data_new') }}">Create new</a>
+    <a href="{{ path('personal_data_new') }}" class="btn btn-primary">Create new</a>
     {% endif %}
 
 {% endblock %}

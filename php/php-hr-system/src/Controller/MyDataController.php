@@ -101,7 +101,6 @@ class MyDataController extends AbstractController
         $em->persist($temp_user);
         $em->flush();
 
-        //TODO
-        return $this->redirectToRoute('temporary_personal_data_index');
+        return $this->redirectToRoute('temporary_personal_data_edit', ['id' => $temp_user->getId()]);
     }
 }
