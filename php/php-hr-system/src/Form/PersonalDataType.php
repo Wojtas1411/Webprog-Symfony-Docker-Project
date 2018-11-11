@@ -29,12 +29,19 @@ class PersonalDataType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $choices = array();
+        $me = $builder->getData();
+
+        if(!($me->getUserID() === null)){
+            $choices[$me->getUserID()->getUsername()] = $me->getUserID()->getUsername();
+        }
+
         $people = $this->entityManager->getRepository(User::class)->findAll();
         foreach ($people as $person){
             if ($person->getPersonalData() === null && $person->getUsername() != "admin"){
                 $choices[$person->getUsername()] = $person->getUsername();
             }
         }
+
         $builder
             ->add('FamilyName')
             ->add('FirstName')

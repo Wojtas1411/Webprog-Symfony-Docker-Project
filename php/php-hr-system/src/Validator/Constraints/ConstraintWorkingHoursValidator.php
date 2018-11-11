@@ -39,7 +39,7 @@ class ConstraintWorkingHoursValidator extends ConstraintValidator
             $sum += $membership->getWorkingHoursPerWeek();
         }
 
-        if($person->getJobData()){
+        if($person->getJobData() === null){
             $this->context->buildViolation("Job data for this Person does not exist")->addViolation();
             return;
         }

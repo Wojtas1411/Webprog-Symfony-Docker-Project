@@ -26,12 +26,21 @@ class JobDataType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $choices = array();
+        $me = $builder->getData();
+
+        if(!($me->getUser() === null)){
+            $choices[$me->getUser()->getFamilyName()." ".$me->getUser()->getFirstName()] = $me->getUser()->getUserID()->getUsername();
+        }
+
         $people = $this->entityManager->getRepository(PersonalData::class)->findAll();
         foreach ($people as $person){
             if( $person->getJobData() === null){
                 $choices[$person->getFamilyName()." ".$person->getFirstName()] = $person->getUserID()->getUsername();
             }
         }
+
+
+
 
         $builder
             ->add('StartContract')
